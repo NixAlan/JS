@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liking Likes Part 2</title>
+    <link rel="stylesheet" href="style_part2.css">
+</head>
+<body>
+    <div class="page">
+        <div class="header">
+            <h1>Network</h1>
+        </div>
+        <div class="container-main">
+            <!-- use wrapper to center Your Feed P -->
+            <div class="wrapper-center">
+                <p>Your Feed</p>
+            </div>
+            <!-- use wrapper main to seperate P and Main -->
+            <div class="wrapper-main">
+                <div class="container-left-main">
+                    <div class="box-user">
+                        <img src="./icons/user-circle.png" alt="picture of user">
+                        <p class="link">Add an avatar</p>
+                        <p class="name">James Doe</p>
+                    </div>
+                </div>
+                <div class="container-right-main">
+                    <div class="box">
+                        <div class="row">
+                            <p class="name">Nail M</p>
+                            <div class="likes">
+                                    <div class="display-likes">
+                                        <p id="number-of-likes1" class="number-of-likes">9</p>
+                                        <p>likes(s)</p>
+                                    </div>
+                                <button onclick="addLike('number-of-likes1')" class ="like-button" >Like</button>
+                            </div>
+                        </div>
+                        <p>I Just set up this new discord bot, let me know what you all think. <span class="link">link</span></p>
+                    </div>
+                    <div class="box">
+                        <div class="row">
+                            <p class="name">Nichole K</p>
+                            <div class="likes">
+                                    <div class="display-likes">
+                                        <p id="number-of-likes2" class="number-of-likes">12</p>
+                                        <p>likes(s)</p>
+                                    </div>
+                                <button onclick="addLike('number-of-likes2')" class ="like-button" >Like</button>
+                            </div>
+                        </div>
+                        <p>Just finished my <span class="link">next comic,</span>check it out.</p>
+                    </div>
+                    <div class="box">
+                        <div class="row">
+                            <p class="name">Jim R</p>
+                            <div class="likes">
+                                    <div class="display-likes">
+                                        <p id="number-of-likes3" class="number-of-likes">9</p>
+                                        <p>likes(s)</p>
+                                    </div>
+                                <button onclick="addLike('number-of-likes3')" class ="like-button" >Like</button>
+                            </div>
+                        </div>
+                        <p>I can't stop listening to the <span class="link">new album</span>. who else is liking it?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script_part2.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)file:///C:/Alan/Dojo/JS/Nix_Alan_JS_Dojo_Weather/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="stylesheet" href="./Dojo Weather_files/style.css">
+</head>
+<body>
+    <div class="container-page">
+        <div class="container-header">
+            <div class="header">
+                <p class="title">DojoWeather</p>
+                <ul>
+                    <li onclick="alertLoading()">Burbank</li>
+                    <li onclick="alertLoading()">Chicago</li>
+                    <li onclick="alertLoading()">Dallas</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container-main">
+            <div class="header-main">
+                <p class="city-name">San Jose</p>
+                <div class="temperature-select">
+                    <p>show temperature in</p>
+                    <select onchange="convert()" id="temperature-type" name="Temperature">
+                        <option>℃</option>
+                        <option>℉</option>
+                    </select>
+                </div>
+            </div>
+            <hr>
+            <div class="container-four-day-forecast">
+                <div class="box-day-forecast">
+                    <p class="forecast-day">Today</p>
+                    <img class="forecast-icon circle" src="./Dojo Weather_files/some_rain.png" alt="icon of rain">
+                    <p class="forecast-description">Some Rain</p>
+                    <div class="high-low">
+                        <p class="high"><span id="today-high" class="temp">24</span><span class="degree">℃</span></p>
+                        <p class="low"><span id="today-low" class="temp">18</span><span class="degree">℃</span></p>
+                    </div>
+                </div>
+                <div class="box-day-forecast middle-left">
+                    <p class="forecast-day">Tomorrow</p>
+                    <img class="forecast-icon circle" src="./Dojo Weather_files/some_sun.png" alt="icon of sun">
+                    <p class="forecast-description">Some Sun</p>
+                    <div class="high-low">
+                        <p class="high"><span id="tomorrow-high" class="temp">27</span><span class="degree">℃</span></p>
+                        <p class="low"><span id="tomorrow-low" class="temp">19</span><span class="degree">℃</span></p>
+                    </div>
+                </div>
+                <div class="box-day-forecast middle-right">
+                    <p class="forecast-day">Friday</p>
+                    <img class="forecast-icon circle" src="./Dojo Weather_files/some_clouds.png" alt="icon of clouds">
+                    <p class="forecast-description">Some Clouds</p>
+                    <div class="high-low">
+                        <p class="high"><span id="friday-high" class="temp">21</span><span class="degree">℃</span></p>
+                        <p class="low"><span id="friday-low" class="temp">16</span><span class="degree">℃</span></p>
+                    </div> 
+                </div>
+                <div class="box-day-forecast">
+                    <p class="forecast-day">Saturday</p>
+                    <img class="forecast-icon circle" src="./Dojo Weather_files/some_sun.png" alt="icon of sun">
+                    <p class="forecast-description">Some Sun</p>
+                    <div class="high-low">
+                        <p class="high"><span id="saturday-high" class="temp">26</span><span class="degree">℃</span></p>
+                        <p class="low"><span id="saturday-low" class="temp">21</span><span class="degree">℃</span></p>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+        <div class="container-cookie">
+            <div id="cookies" class="cookie">
+                        <div class="wrapper-image">
+                            <img class="cookie-icon" src="./Dojo Weather_files/cookie.png" alt="picture of cookie">
+                        </div>
+                        <div class="wrapper">
+                            <p class="emphasize">Stop! Cookie Time</p>
+                            <p> We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <span class="link">Read more.</span></p>
+                        </div>
+                        <div class="wrapper-button">
+                            <button onclick="removeCookie()" class="accept">I Accept</button>
+                        </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="./Dojo Weather_files/script.js.download"></script>
+
+</body></html>

@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* style tags */
+li{
+    font-size: 25px;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+    list-style-type: none;
+}
+.container-page{
+    width: 100%;
+}
+.title{
+    font-size: 40px;
+    font-weight: bold;
+}
+.header{
+    width: 800px;
+    height: 70px;
+    background-color: lightblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    /* padding: 0px 150px; */
+}
+.container-header{
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 0 150px; */
+}
+
+.container-main{
+    width: 800px;
+    margin: 0 auto;
+    /* padding: 0px 150px; */
+}
+.header-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px
+}
+.temperature-select{
+    display: flex;
+}
+.temperature-select p {
+    margin-right: 10px;
+}
+.city-name{
+    font-size: 35px;
+    font-weight: bold;
+}
+.container-four-day-forecast{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+/* style the forecast boKx */
+.box-day-forecast{
+    /* flex: 1; */
+    display: flex;
+    background-color: lightgray;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    height: 200px;
+    width: 20%;
+}
+.middle-left{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.middle-right{
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.high-low{
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+.high{
+    color: red;
+}
+.low{
+    color: blue;
+}
+.circle{
+    border-radius: 50%;
+    border: 3px solid lightgray;
+    text-align: center;
+    color: black;
+}
+.forecast-icon{
+    height: 100px;
+}
+/* style the cookie */
+.container-cookie{
+    width: 100%;
+    /* padding: 0 150px; */
+}
+.cookie{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: lightgray;
+    height: 50px;
+}
+.wrapper p:nth-of-type(2){
+    font-size: 15px;
+}
+.emphasize{
+    font-size: 20px;
+    font-weight: bold;
+}
+.wrapper{
+    flex: 6;
+}
+.wrapper-image{
+    flex: 1;
+}
+.accept{
+    padding: 5px;
+    background-color: lightblue;
+}
+.wrapper-button{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link{
+    text-decoration: underline;
+    color: blue;
+}

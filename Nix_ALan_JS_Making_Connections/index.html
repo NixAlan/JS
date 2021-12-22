@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="headernav">
+                <h1>Profile</h1>
+                <p>Home</p>
+                <h3>My Profile</h3>
+                <p>Find Connections</p>
+            </div>
+            <div class="headersignout">
+                <button>Sign Out</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="mainleft">
+                <div class="contentboxuserinfo border">
+                    <div class="contentboxuserinfoheader"><img src="./icons/user-circle.png" alt="picture of user"></div>
+                    <div class="contentboxuserinfomain">
+                        <h2 id="user-name">Jane Dow</h2>
+                        <div class="contentboxuserinforow row">
+                            <img class="icon" src="./icons/map-marker.png" alt="Picture of Map Marker">
+                            <p>Seattle</p>
+                        </div>
+                        <p class="row"> Developer | Engineer | Problem Solver | Master of Shadows and the Internet!</p>
+                        <div class="contentboxuserinforow row">
+                            <img class="icon" src="./icons/gear.png" alt="Picture of Gear">
+                            <p class="row" onclick="setName('user-name')"><span class="edit">edit profile</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contentboxeducation border">
+                    <div class="contentboxheader">Education</div>
+                    <div class="contentboxmain">
+                        <h4 class="row">Coding Dojo - full Stack Bootcamp</h4>
+                        <p class="row">Dec 2019 - Mar 2020</p>
+                        <h5 class="row">Triple Black Belt in Python, MERN, and C#</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="mainright">
+                <div class="contentboxrequests border">
+                    <div class="contentboxheader">
+                        <p class="connectionrequests"><div id="connection-requests"  class="circle">2</div></p>
+                        <p>Connection Requests</p>
+                    </div>
+                    <div id="connection-request-row-todd" class="contentboxmainrequestsrow">
+                        <div class="wrapper">
+                            <img class="leftsiderow" src="./images/todd-s.jpg" alt="picture of person requesting connection">
+                            <p class="leftsiderow">Todd E</p> 
+                        </div>
+                        <div class="wrapper">
+                            <img onclick="acceptRejectRequest(this)" class="leftsiderow" src="./icons/accept-circle.png" alt="click to accept">
+                            <img onclick="acceptRejectRequest(this)" class="leftsiderow" src="./icons/close-circle.png" alt="click to close">
+                        </div>
+                    </div>
+                    <div class="contentboxmainrequestsrow">
+                        <div class="wrapper">
+                            <img class="leftsiderow" src="./images/phil-s.jpg" alt="picture of person requesting connection">
+                            <p class="leftsiderow">Phil A</p>
+                        </div>
+                        <div class="wrapper">
+                            <img class="leftsiderow" src="./icons/accept-circle.png" alt="click to accept">
+                            <img class="leftsiderow" src="./icons/close-circle.png" alt="click to close">
+                        </div>
+                    </div>
+                </div>
+                <div class="contentboxconnections border">
+                    <div class="contentboxheader">
+                        <p class="connections"><div id="connections" class="oval">418</div></p>
+                        <p>Your Connections</p>
+                    </div>
+                    <div class="contentboxmainconnections">
+                        <div class="wrapper">
+                            <img class="leftsiderow" src="./images/adrien-s.jpg" alt="picture of person requesting connection">
+                            <p class="leftsiderow">Adren D</p>
+                        </div>
+                        <div class="wrapper">
+                            <img class="leftsiderow" src="./images/anne-s.jpg" alt="picture of person requesting connection">
+                            <p class="leftsiderow">Anne J</p>
+                        </div>
+                        <div class="wrapper">
+                            <img class="leftsiderow" src="./images/alayne-s.jpg" alt="picture of person requesting connection">
+                            <p class="leftsiderow">Alayne T</p>
+                        </div>
+                        <div class="wrapper">
+                            <img class="leftsiderow" src="./images/todd-s.jpg" alt="picture of person requesting connection">
+                            <p class="leftsiderow">Todd E</p>
+                        </div>
+                        <div class="wrapper">
+                            
+                        </div>
+                    </div>
+                </div>
+                <p id="viewmore">View More</p>
+            </div>
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

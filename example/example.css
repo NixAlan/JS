@@ -1,0 +1,28 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.wrapper {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.header {
+    color: red;
+}
+
+#blueText {
+    color: blue;
+    cursor: pointer;
+}
+
+.cnt {
+    display: inline-block;
+}
+/* p {
+    width: 50%;
+} */
+img {
+    width: 25px;
+    cursor: pointer;
+}
